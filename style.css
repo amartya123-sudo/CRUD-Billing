@@ -1,0 +1,111 @@
+body {
+  margin: auto;
+}
+
+#particular {
+  grid-area: particular;
+}
+#hsnc {
+  grid-area: hsnc;
+}
+#quantity {
+  grid-area: quantity;
+}
+#rate {
+  grid-area: rate;
+}
+#amount {
+  grid-area: amount;
+}
+#add {
+  grid-area: ad;
+}
+
+#navigation {
+  display: flex;
+  margin: auto;
+  background-color: #e3cff3;
+  height: 64px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.title {
+  position: relative;
+  margin: 12px 0px 0px 100px;
+}
+
+#customer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 20px;
+  justify-items: end;
+  justify-content: space-around;
+  position: relative;
+  margin: 40px 60px 40px 60px;
+  box-sizing: border-box;
+  border-style: dashed;
+  border-radius: 5px;
+  border-color: #c3cfd9;
+}
+#particulars {
+  display: grid;
+  grid-template-areas:
+    "particular hsnc quantity rate"
+    "amount . . ad";
+  row-gap: 20px;
+  justify-items: end;
+  justify-content: space-around;
+  position: relative;
+  margin: 0px 60px 0px 60px;
+  box-sizing: border-box;
+  border-style: dashed;
+  border-radius: 5px;
+  border-color: #c3cfd9;
+}
+
+legend {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+input {
+  margin: auto;
+  padding: 12px;
+  width: 275px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border-style: ridge;
+}
+
+button {
+  width: 90px;
+  background-color: #6558f5;
+  color: white;
+  font-size: large;
+  box-sizing: border-box;
+  border-style: ridge;
+  border-color: #6558f5;
+  border-radius: 7px;
+}
+table {
+  width: 90%;
+  table-layout: fixed;
+  overflow-wrap: break-word;
+  position: relative;
+  margin: 30px 80px 0px 80px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 21px;
+  text-align: center;
+}
+table,
+th,td {
+  height: 40px;
+  border: 2px solid #c3cfd9;
+  border-collapse: collapse;
+}

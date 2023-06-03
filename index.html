@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Billing</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav id="navigation">
+      <div class="title">CRUD Billing</div>
+    </nav>
+    <form action="">
+      <fieldset id="customer">
+        <legend>Customer Details</legend>
+        <input type="text" id="name" placeholder="Customer Name" />
+        <input type="text" id="addres" placeholder="Address" />
+        <input type="text" id="mobile" placeholder="Mobile No" />
+        <input type="email" id="email" placeholder="Email ID" />
+        <input type="text" id="state" placeholder="State" />
+        <input type="text" id="scode" placeholder="State Code" />
+        <input type="text" id="gstn" placeholder="GSTN" />
+        <button type="submit" id="save">Save</button>
+      </fieldset>
+      <fieldset id="particulars">
+        <legend>Particular Details</legend>
+        <input type="text" id="particular" placeholder="Particulars" />
+        <input type="text" id="hsnc" placeholder="HSN Code" />
+        <input type="text" id="quantity" placeholder="Quantity" />
+        <input type="email" id="rate" placeholder="Rate" />
+        <input type="text" id="amount" placeholder="Amount" />
+        <button type="submit" id="add">Add</button>
+      </fieldset>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 100px">S.No.</th>
+          <th>Particulars</th>
+          <th style="width: 150px">HSN Code</th>
+          <th style="width: 100px">QTY.</th>
+          <th style="width: 250px">Rate</th>
+          <th style="width: 250px">Amount</th>
+        </tr>
+      </thead>
+      <tbody id="data"></tbody>
+    </table>
+  </body>
+</html>
